@@ -47,7 +47,7 @@ const CoinList = ({ coins }) => {
       {coins.map((coin) => (
         <List key={coin.id}>
           <span>{coin.rank}</span>
-          <h1>{coin.name}</h1>
+          <span>{coin.name}</span>
           <span>{coin.symbol}</span>
           <span>₩ {coin.quotes.KRW.price}</span>
           <span>{coin.quotes.KRW.percent_change_24h}%</span>

@@ -36,7 +36,7 @@ export const ToggleButton = styled.button`
 
 export const List = styled.li`
   padding: 0 1rem;
-  width: 100%;
+  width: 80%;
   height: 45px;
   border: 2px solid ${(props) => props.theme.textColor};
   display: flex;
@@ -44,7 +44,6 @@ export const List = styled.li`
   gap: 3vw;
   margin-bottom: 1rem;
 
-  h1,
   span {
     font-family: "Gowun Batang", serif;
     font-weight: 700;
