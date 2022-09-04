@@ -1,11 +1,12 @@
 export const lightTheme = {
   bgColor: "#fff",
   textColor: "#222",
-  accentColor: "#12cbef",
+  button: "#e2e2e2",
+  buttonHover: "#8a8a8a",
 };
-
 export const darkTheme = {
   bgColor: "#282c35",
   textColor: "#fff",
-  accentColor: "#ffe246",
+  button: "#494949",
+  buttonHover: "#606060",
 };

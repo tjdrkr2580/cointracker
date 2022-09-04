@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Kanit:wght@100;800&display=swap");
+
 * {
+  font-size: 14px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
