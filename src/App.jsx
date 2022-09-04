@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./app.css";
+import "./App.css";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./global";
 import Loading from "./components/Loading";
