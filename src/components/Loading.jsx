@@ -1,7 +1,11 @@
 import React from "react";
-
+import { LoadingContainer, Spinner } from "./../App";
 const Loading = () => {
-  return <div>Loading</div>;
+  return (
+    <LoadingContainer>
+      <Spinner />
+    </LoadingContainer>
+  );
 };
 
 export default Loading;
