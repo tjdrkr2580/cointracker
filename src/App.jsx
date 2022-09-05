@@ -53,6 +53,7 @@ export const List = styled.li`
 `;
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const [darkmode, setDarkmode] = useState(false);
   const [coins, setCoins] = useState([]);
   useEffect(() => {
@@ -61,16 +62,23 @@ function App() {
         response.json().then((json) => {
           const jsonArray = json.slice(0, 100);
           setCoins(jsonArray);
+          setLoading(!loading);
         })
     );
   }, []);
   console.log(coins);
   return (
-    <ThemeProvider theme={darkmode ? darkTheme : lightTheme}>
-      <GlobalStyle />
-      <Header darkmode={darkmode} setDarkmode={setDarkmode} />
-      <CoinList coins={coins} />
-    </ThemeProvider>
+    <>
+      {loading ? (
+        <Loading />
+      ) : (
+        <ThemeProvider theme={darkmode ? darkTheme : lightTheme}>
+          <GlobalStyle />
+          <Header darkmode={darkmode} setDarkmode={setDarkmode} />
+          <CoinList coins={coins} />
+        </ThemeProvider>
+      )}
+    </>
   );
 }
 

@@ -33,7 +33,6 @@ const ListForm = styled.ul`
 `;
 
 const CoinList = ({ coins }) => {
-  console.log(coins);
   return (
     <ListForm>
       <ul className="line">
