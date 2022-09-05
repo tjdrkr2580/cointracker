@@ -35,13 +35,13 @@ export const ToggleButton = styled.button`
 `;
 
 export const List = styled.li`
+  justify-content: space-between;
   padding: 0 1rem;
   width: 80%;
   height: 45px;
   border: 2px solid ${(props) => props.theme.textColor};
   display: flex;
   align-items: center;
-  gap: 3vw;
   margin-bottom: 1rem;
 
   span {
