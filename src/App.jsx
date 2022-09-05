@@ -116,7 +116,6 @@ function App() {
         })
     );
   }, []);
-  console.log(coins);
   return (
     <>
       <ThemeProvider theme={darkmode ? darkTheme : lightTheme}>
