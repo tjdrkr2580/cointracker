@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { ToggleButton } from "./../App";
 
 const Head = styled.header`
-  padding-top: 2rem;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 2px solid ${(props) => props.theme.textColor};
   width: 100vw;
   height: 55px;
   h1 {
