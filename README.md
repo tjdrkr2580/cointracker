@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Coin Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+![ezgif-5-660cd282a9.gif](Coin%20Tracker%202f7ed89e789f40e89d5187a3ef0634b8/ezgif-5-660cd282a9.gif)
 
-In the project directory, you can run:
+<aside>
+💡 1 ~ 100위 가상 화폐 시세 모니터링 웹 페이지
 
-### `npm start`
+</aside>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 파일 구조 📝
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Coin Tracker
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```xml
+- node_modules
+    - react-router-dom
+    - react-response
+- components
+    - CoinList.jsx
+		- Footer.jsx
+		- Header.jsx
+		- Loading.jsx
+		- Top.jsx
+- src
+		- App.jsx
+		- index.js
+		- global.js
+		- App.css
+- .gitignore
+- package-lock.json
+- package.json
+- README.md
+```
 
-### `npm run build`
+## 사용한 도구 ⛏
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React - `SPA가 가능한 JavaScript Framework`
+- Styled-components - `컴포넌트 안에서 스타일링을 하게 해주는 라이브러리`
+- React-responsive - `OS 설정에 따라 모드를 변형시키기 위함`
+- API - `Coin Paprika`
+- vercel - `나의 프로젝트를 무료로 배포할 수 있는 웹 페이지`
+- git - `버전 관리`
+- vscode - `소스 코드 편집기`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### CRA을 사용하여 제작한 프로젝트.
 
-### `npm run eject`
+```xml
+$ npx create-react-app .
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 프로젝트 실행
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```xml
+$ npm install
+$ npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+or
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[vercel 페이지로 이동하기](http://cointracker-alpha.vercel.app)
 
-## Learn More
+## 배운 점 🤠
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. React-response를 통해 OS 테마에 따라 첫 접속 시에 다크모드, 라이트모드를 설정 가능!
+2. Open API로부터 정보를 가져와서 꾸미는 것을 정말 재미있는 일이다!
+3. JSON을 잘라냄으로써 받는 정보의 양을 한정시킬 수도 있다.
