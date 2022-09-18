@@ -21,15 +21,15 @@
     - react-response
 - components
     - CoinList.jsx
-		- Footer.jsx
-		- Header.jsx
-		- Loading.jsx
-		- Top.jsx
+    - Footer.jsx
+    - Header.jsx
+    - Loading.jsx
+    - Top.jsx
 - src
-		- App.jsx
-		- index.js
-		- global.js
-		- App.css
+	- App.jsx
+	- index.js
+	- global.js
+	- App.css
 - .gitignore
 - package-lock.json
 - package.json
